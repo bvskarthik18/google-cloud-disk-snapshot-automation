@@ -22,10 +22,13 @@ Before you start, ensure you have the following:
    - `roles/cloudfunctions.developer` to deploy Cloud Functions.
    - `roles/cloudscheduler.admin` to manage Cloud Scheduler.
 
-## Setup
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/your-username/gcp-disk-snapshot-creator.git
-cd gcp-disk-snapshot-creator
+## HTTP Request Headers
+
+Below are the details of the HTTP request headers used in Scheduler:
+
+| **Name**       | **Value**            |
+|----------------|-----------------------|
+| Content-Type   | application/json      |
+| User-Agent     | Google-Cloud-Scheduler|
