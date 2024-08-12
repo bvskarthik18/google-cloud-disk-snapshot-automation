@@ -34,9 +34,7 @@ Below are the details of the HTTP request headers used in Scheduler:
 | Content-Type   | application/json      |
 | User-Agent     | Google-Cloud-Scheduler|
 
-**Note:** The Cloud Function expects a JSON object in the request body containing Project ID and Zone
-
-
+**Note:** The Cloud Function expects a JSON object in the request body containing Project ID and Zone. Refer **requestBody.json** file 
 
 ## References
 
