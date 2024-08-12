@@ -32,3 +32,9 @@ Below are the details of the HTTP request headers used in Scheduler:
 |----------------|-----------------------|
 | Content-Type   | application/json      |
 | User-Agent     | Google-Cloud-Scheduler|
+
+
+
+## References
+
+For a detailed example of creating snapshots in GCP using Python, refer to the official [GCP documentation](https://cloud.google.com/compute/docs/disks/create-snapshots)
