@@ -16,8 +16,9 @@ This project provides a Python Cloud Function that creates snapshots for all dis
 Before you start, ensure you have the following:
 
 1. A Google Cloud Platform project.
-2. Google Cloud SDK installed and authenticated.
-3. Necessary IAM permissions:
+2. **Cloud Function Deployment:**
+    * A Python Cloud Function deployed in your GCP project. Refer to the project code for deployment instructions.
+3. Necessary IAM permissions assigned to the service account used by the Cloud Function:
    - `roles/compute.admin` to manage disks and snapshots.
    - `roles/cloudfunctions.developer` to deploy Cloud Functions.
    - `roles/cloudscheduler.admin` to manage Cloud Scheduler.
@@ -32,6 +33,8 @@ Below are the details of the HTTP request headers used in Scheduler:
 |----------------|-----------------------|
 | Content-Type   | application/json      |
 | User-Agent     | Google-Cloud-Scheduler|
+
+**Note:** The Cloud Function expects a JSON object in the request body containing Project ID and Zone
 
 
 
